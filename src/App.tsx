@@ -13,7 +13,7 @@ import { GithubSection } from './components/GithubSection'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 import { CvModal } from './components/CvModal'
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react";
 
 
 export function App() {
