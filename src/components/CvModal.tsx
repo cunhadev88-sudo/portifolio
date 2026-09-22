@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { 
   X, 
   Printer, 
+  Download,
   Mail, 
   GraduationCap, 
   Briefcase, 
@@ -72,12 +73,24 @@ ${experiences.map(e => `
               <span>{copied ? 'Copiado!' : 'Copiar Texto'}</span>
             </button>
 
+            <a
+              href="/Erick_Costa_CV.pdf"
+              download="Erick_Costa_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-sky-600 hover:bg-sky-500 text-white text-xs font-mono font-semibold transition-colors shadow-sm cursor-pointer hover:shadow-sky-500/20"
+              title="Baixar arquivo Erick_Costa_CV.pdf"
+            >
+              <Download className="w-3.5 h-3.5" />
+              <span>Imprimir / Salvar PDF</span>
+            </a>
+
             <button
               onClick={handlePrint}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-sky-600 hover:bg-sky-500 text-white text-xs font-mono font-semibold transition-colors shadow-sm"
+              className="p-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-colors border border-slate-700"
+              title="Imprimir visualização em tela"
             >
-              <Printer className="w-3.5 h-3.5" />
-              <span>Imprimir / Salvar PDF</span>
+              <Printer className="w-4 h-4" />
             </button>
 
             <button
@@ -193,15 +206,26 @@ ${experiences.map(e => `
 
         </div>
 
-        {/* Footer */}
-        <div className="mt-8 pt-6 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400 print:hidden">
+        <div className="mt-8 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400 print:hidden">
           <span>Erick Cunha — Software Developer</span>
-          <button
-            onClick={onClose}
-            className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white transition-colors font-mono"
-          >
-            Fechar Janela
-          </button>
+          <div className="flex items-center gap-2">
+            <a
+              href="/Erick_Costa_CV.pdf"
+              download="Erick_Costa_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-sky-600 hover:bg-sky-500 text-white transition-colors font-mono font-semibold"
+            >
+              <Download className="w-3.5 h-3.5" />
+              <span>Baixar CV em PDF</span>
+            </a>
+            <button
+              onClick={onClose}
+              className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white transition-colors font-mono"
+            >
+              Fechar Janela
+            </button>
+          </div>
         </div>
 
       </div>
