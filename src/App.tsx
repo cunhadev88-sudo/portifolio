@@ -13,12 +13,15 @@ import { GithubSection } from './components/GithubSection'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 import { CvModal } from './components/CvModal'
+import { Analytics } from "@vercel/analytics/next"
+
 
 export function App() {
   const [isCvModalOpen, setIsCvModalOpen] = useState(false)
 
   return (
     <div className="min-h-screen bg-[#070a0f] text-slate-100 flex flex-col font-sans selection:bg-sky-500/30 selection:text-sky-200">
+      <Analytics />
       {/* Top Fixed Navbar */}
       <Navbar onOpenCvModal={() => setIsCvModalOpen(true)} />
 
