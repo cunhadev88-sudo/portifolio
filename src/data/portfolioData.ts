@@ -14,8 +14,8 @@ export const personalInfo = {
   experienceSince: 2022,
   socialLinks: {
     github: 'https://github.com/erick-cunha',
-    linkedin: 'https://linkedin.com/in/erick-cunha',
-    email: 'erick.cunha.dev@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/erick-cunha-87079a239?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
+    email: 'cunhadev88@gmail.com',
   },
   bioNarrative: [
     'Desenvolvedor de software com trajetória consolidada na criação de sistemas internos robustos, APIs de alto desempenho e automações de fluxos operacionais críticos.',
