@@ -406,7 +406,7 @@ export const experiences: ExperienceItem[] = [
     businessImpact: 'Concepção de 9 robôs que eliminaram centenas de horas humanas de digitação repetitiva mensal, garantindo pontualidade fiscal estrita e mitigando riscos de multas.'
   },
   {
-    company: 'C&A',
+    company: 'Tribunal de Justiça',
     role: 'Jovem Aprendiz Administrativo',
     period: '2021 — 2022',
     location: 'Brasil',
